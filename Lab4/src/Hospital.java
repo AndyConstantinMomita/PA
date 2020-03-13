@@ -1,6 +1,6 @@
 public class Hospital implements Comparable<Hospital> {
-    String name;
-    int capacity;
+    private String name;
+    private int capacity;
 
     public Hospital(){}
 

@@ -1,6 +1,6 @@
 
 public class Resident {
-    String name;
+    private String name;
 
     public Resident(){}
 
