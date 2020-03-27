@@ -40,7 +40,13 @@ public class DrawingPanel extends JPanel {
         String color = (String)frame.configPanel.colorCombo.getSelectedItem();
         switch(color){
             case "Black": frame.canvas.graphics.setColor(Color.BLACK);
+            {
+                break;
+            }
             case "Random": frame.canvas.graphics.setColor(new Color(random.nextFloat(),random.nextFloat(),random.nextFloat(),.5f));
+            {
+                break;
+            }
         }
         graphics.fill(new RegularPolygon(x, y, radius, sides));
     }
