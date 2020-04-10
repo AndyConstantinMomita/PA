@@ -5,7 +5,7 @@ public class ArtistController {
         Connection connection = Database.getConnection();
 
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO artists (name, country) VALUES (?,?)");
-
+        preparedStatement.setString(1,name);
         preparedStatement.setString(2,country);
         preparedStatement.executeUpdate();
     }
