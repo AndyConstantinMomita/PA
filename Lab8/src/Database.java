@@ -12,7 +12,7 @@ public class Database {
         return connection;
     }
 
-    public static void createConnection() throws SQLException {
+    private static void createConnection() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/musicalbum" ;
         try {
              connection = DriverManager.getConnection(url, "dba", "sqlLab88");

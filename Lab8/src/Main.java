@@ -3,7 +3,6 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException {
         Database database = new Database();
-        database.createConnection();
 
         ArtistController artistController = new ArtistController();
         AlbumController albumController = new AlbumController();
